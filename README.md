@@ -15,7 +15,10 @@ Open the application
 ```bash
 localhost:4200 - if not using Docker Toolkit
 192.168.99.100:4200 - if using Docker Toolkit
+
+To run only mongodb server - "docker run -d --name mongodb -p 27017:27017 mongo"
 ```
+*Note: For angular in package.json change 'ng serve' to 'ng serve --host 0.0.0.0'*
 
 *please check IP as per your system by using - docker-machine ip default* 
 
