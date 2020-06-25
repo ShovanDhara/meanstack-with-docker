@@ -24,3 +24,5 @@ app.use((err, req, res, next) => {
 
 //start server
 app.listen(process.env.PORT, () => console.log(`Server started at port: ${process.env.PORT}`));
+
+// [Note] when running without docker, change mogodb uri to  "MONGODB_URI": "mongodb://localhost:27017/RegistrationDB" in config.json

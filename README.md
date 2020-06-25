@@ -13,7 +13,7 @@ docker-compose up --build
 Open the application 
 
 ```bash
-localhost:4200 - if not using Docker Toolkit
+localhost:4200 - if not using Docker Toolkit and using Mac Docker Desktop
 192.168.99.100:4200 - if using Docker Toolkit
 
 To run only mongodb server - "docker run -d --name mongodb -p 27017:27017 mongo"

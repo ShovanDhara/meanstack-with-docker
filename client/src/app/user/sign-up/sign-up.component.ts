@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
-import { UserService } from '../../shared/user.service'
+import { UserService } from '../../shared/user.service';
 import { HttpErrorResponse } from '@angular/common/http';
 
 @Component({
@@ -28,6 +28,7 @@ export class SignUpComponent implements OnInit {
         this.showSucessMessage = true;
         setTimeout(() => this.showSucessMessage = false, 4000);
         this.resetForm(form);
+        this.showSucessMessage = true;
         this.successMsg = 'Saved Successfully';
       },
       err => {
@@ -41,7 +42,7 @@ export class SignUpComponent implements OnInit {
       (res: any) => {
         setTimeout(() => {
           this.showSucessMessage = false;
-          this.serverErrorMessages = ''
+          this.serverErrorMessages = '';
         }, 4000);
         this.resetForm(form);
         if (!res) {

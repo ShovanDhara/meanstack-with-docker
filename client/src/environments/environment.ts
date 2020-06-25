@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  apiBaseUrl: 'http://192.168.99.100:3000/api'  // For using post through Docker Toolbox
-  // apiBaseUrl: 'http://localhost:3000/api' - Enabale this when working on localhost wothout using Docker 
+  // apiBaseUrl: 'http://192.168.99.100:3000/api'  // For using post through Docker Toolbox
+  apiBaseUrl: 'http://localhost:3000/api', // - Enabale this when working on localhost wothout using Docker or Using Docker in Mac
 };
 
 /*
